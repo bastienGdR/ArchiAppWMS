@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TP client - Bastien de Rugy</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body class="bright-mode">
+        <header class="bright-mode">
+            <p>Sujet de conversation</p>
+            <button id="toggle-btn" class="bright-mode" onclick="switchMode()">
+                <span id="icon" class="material-icons">brightness_3</span>
+            </button>
+        </header>
+        <ul>
+            <!-- <li><span>user</span> Message</li> -->
+        </ul>
+        <textarea></textarea>
+        <div>
+            <button class="bright-mode" onclick="sendMessage()">Envoyer</button>
+            <button class="bright-mode" onclick="updateBubbles()">Mise à jour</button>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
