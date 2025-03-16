@@ -1,1 +1,7 @@
 # ArchiAppWMS
+
+J'ai choisi de suivre ce qui avait été proposé dans le sujet de TP. J'ai commencé par dévellopé la partie client, avec des messages qui s'affichent sur la page sous forme de bulles avec le message, le nom d'utilisateur et la date à laquelle le message a été posté. J'ai aussi devellopé un bouton permettant de switcher les couleurs de la page en dark mode : un booléen gère quel mode afficher et en fonction de sa valeur, on peut changer les classes sur les objets qui doivent être modifier. Par exemple si l'on appuie sur le bouton, la classe .dark-mode va être changé en .bright-mode et le logo du bouton va se transformer en lune.
+
+Pour la partie serveur qui est sur un replit, il y a plusieurs routes que j'utilise dans mon application et d'autres qui peuvent être utile pour afficher ou supprimer certains messages. Lorsque je veux rajouter un message, j'appuie sur envoyer, je récupère le message dans le textarea, envoie le contenu vers l'api qui dirige vers le replit, puis je vide le textarea. La partie serveur va donc recevoir le contenu du message et l'ajouter dans les messages existants contenues dans la variable allMsgs. Un objet message est modélisé par son contenu dans "msg", des meta datas dans "metaData" avec la date et le pseudo. On peut supprimer un message en utilisant la route /msg/del/* en indiquant l'id à supprimer.
+
+Lien du replit : https://replit.com/@bastienGdR/MessageBoard
